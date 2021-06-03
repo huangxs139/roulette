@@ -34,6 +34,7 @@ def init():
 
 def main():
   init()
+  random.seed(time.time())
   result = []
   result.append(gen(main_dict['forbidden_list'], 2))
   result.append(gen(main_dict['limited_list'], 2))
